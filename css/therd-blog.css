@@ -1,0 +1,180 @@
+/*-------------------------------------------------------
+    [ Preloader ]
+-------------------------------------------------------*/
+
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	z-index: 99999;
+}
+
+.gooey {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 142px;
+	height: 40px;
+	margin: -20px 0 0 -71px;
+	background: #fff;
+	filter: contrast(20);
+}
+
+.gooey .dot {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 12px;
+	left: 15px;
+	filter: blur(4px);
+	background: #000;
+	border-radius: 50%;
+	transform: translateX(0);
+	animation: dot 3s infinite;
+}
+
+.gooey .dots {
+	transform: translateX(0);
+	margin-top: 12px;
+	margin-left: 31px;
+	animation: dots 3s infinite;
+}
+
+.gooey .dots span {
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin-left: 16px;
+	filter: blur(4px);
+	background: #000;
+	border-radius: 50%;
+}
+
+@-moz-keyframes dot {
+	50% {
+		transform: translateX(100px);
+	}
+}
+
+@-webkit-keyframes dot {
+	50% {
+		transform: translateX(100px);
+	}
+}
+
+@-o-keyframes dot {
+	50% {
+		transform: translateX(100px);
+	}
+}
+
+@keyframes dot {
+	50% {
+		transform: translateX(100px);
+	}
+}
+
+@-moz-keyframes dots {
+	50% {
+		transform: translateX(-26px);
+	}
+}
+
+@-webkit-keyframes dots {
+	50% {
+		transform: translateX(-26px);
+	}
+}
+
+@-o-keyframes dots {
+	50% {
+		transform: translateX(-26px);
+	}
+}
+
+@keyframes dots {
+	50% {
+		transform: translateX(-26px);
+	}
+}
+
+/* ----------------------------------------------------------------
+     [ 01 Start Basics ]
+-----------------------------------------------------------------*/
+
+
+body {
+    color: #ffffff;
+	background: rgb(160,170,197);
+	background: linear-gradient(0deg, rgba(160,170,197,1) 0%, rgba(17,34,77,1) 96%, rgba(15,30,73,1) 100%); 
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  header {
+    text-align: center;
+    color: #ffffff;
+    background-image: url("/img/blog/blog-2.jpeg");
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 58px;
+    font-weight: bold;
+    margin-top: 20px;
+	padding: 0px 5%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  article {
+    padding: 50px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  h2 {
+	color: rgb(255 242 226);
+    margin: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-left: 6px solid rgb(255 242 226);
+    padding-left: 10px;
+  }
+  
+  
+  
+  
+  
